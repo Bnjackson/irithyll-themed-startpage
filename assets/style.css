@@ -20,6 +20,7 @@ table {
 textarea {
     white-space: revert;
 }
+
 /*General styles*/
 body {
     background-color: #3B4252;
@@ -29,17 +30,28 @@ body {
     margin: auto;
     width: 70%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h3 {
     color: #E5E9F0
-
 }
 
+#links-container {
+    display: flex;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.links-section {
+    text-align: center;    
+}
 
 a {
-    color: #D8DEE9
-    ;
+    color: #D8DEE9; 
 }
 
 a {
@@ -51,4 +63,8 @@ a:link {
 }  
 a:visited {
     text-decoration: none;
+}
+img {
+    height: 100%;
+    width: 60%;
 }
