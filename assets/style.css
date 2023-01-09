@@ -22,13 +22,11 @@ textarea {
 }
 
 /*General styles*/
-body {
+html {
     background-color: #3B4252;
 }
 
-#container {
-    margin: auto;
-    width: 70%;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,16 +36,8 @@ h3 {
     color: #E5E9F0
 }
 
-#links-container {
-    display: flex;
-}
-
-.header-container {
-    text-align: center;
-}
-
-.links-section {
-    text-align: center;    
+ul {
+    padding: 0;
 }
 
 a {
@@ -64,7 +54,46 @@ a:link {
 a:visited {
     text-decoration: none;
 }
+
+#container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+
+
+/*Image*/
+#img-container {
+    text-align: center;
+}
+
 img {
     height: 100%;
-    width: 60%;
+    width: 80%;
 }
+
+#header-container {
+
+}
+
+#welcome-message-container {
+
+}
+
+date-container {
+    
+}
+
+
+#links-container {
+    display: flex;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.links-section {
+    text-align: center;    
+}
+
