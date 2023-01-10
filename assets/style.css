@@ -1,4 +1,7 @@
-/*CSS reset*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/*
+CSS RESET
+*/
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -21,7 +24,9 @@ textarea {
     white-space: revert;
 }
 
-/*General styles*/
+/*
+GENERAL STYLES
+*/
 html {
     background-color: #3B4252;
 }
@@ -32,8 +37,17 @@ body {
     align-items: center;
 }
 
+h1, h2, h3, a {
+    font-family: 'Quicksand', sans-serif;
+    color: #ECEFF4;
+}
+
+h1, h2 {
+    font-size: 24px;
+}
+
 h3 {
-    color: #E5E9F0
+    
 }
 
 ul {
@@ -41,7 +55,7 @@ ul {
 }
 
 a {
-    color: #D8DEE9; 
+    
 }
 
 a {
@@ -62,7 +76,9 @@ a:visited {
 }
 
 
-/*Image*/
+/*
+IMAGE
+*/
 #img-container {
     text-align: center;
 }
@@ -96,4 +112,9 @@ date-container {
 .links-section {
     text-align: center;    
 }
+
+/*
+WELCOME MESSAGE AND TIME
+*/
+
 
