@@ -1,3 +1,6 @@
+/*
+FONTS
+*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /*
 CSS RESET
@@ -36,19 +39,21 @@ h1, h2, h3, a {
 }
 
 h1, h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    margin-top: 0.5%;
+    margin-bottom: 3%;
 }
 
 h3 {
-    
+    text-align: left;
+    margin-bottom: 3%;
 }
 
 ul {
     padding: 0;
-}
-
-a {
-    
 }
 
 a {
@@ -81,21 +86,19 @@ img {
     width: 80%;
 }
 
+#links-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #header-container {
 
 }
 
-#welcome-message-container {
-
-}
-
-date-container {
-    
-}
-
-
 #links-container {
     display: flex;
+    gap: 5%;
 }
 
 .header-container {
@@ -106,8 +109,18 @@ date-container {
     text-align: center;    
 }
 
+li {
+    margin-top: 6.5%;
+}
+
 /*
 WELCOME MESSAGE AND TIME
 */
+#welcome-message-container {
 
+}
+
+date-container {
+    
+}
 
