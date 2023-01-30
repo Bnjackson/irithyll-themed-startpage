@@ -19,24 +19,27 @@ ol, ul {
 }
 img {
     max-width: 100%;
+    border-radius: 5%;
+    border:1px solid #a8cfde;
 }
 /*
 GENERAL STYLES
 */
 html {
-    background-color: #3B4252;
+    background-image: linear-gradient(to left top, #303b41, #333f46, #36444b, #394850, #3c4d55);
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
-h1, h2, h3, a {
-    font-family: 'Quicksand', sans-serif;
-    color: #ECEFF4;
+h1, h2, a {
+    color: #eaf7fd;
 }
+
 
 h1, h2 {
     font-size: 1.5rem;
@@ -50,6 +53,7 @@ h2 {
 h3 {
     text-align: left;
     margin-bottom: 3%;
+    color: #a4cbda
 }
 
 ul {
@@ -58,6 +62,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #a6cbdb;
 }
 
 a:link {
