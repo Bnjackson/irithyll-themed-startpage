@@ -6,13 +6,10 @@ const displayTime = () => {
     hours = d.getHours();
     let minutes = d.getMinutes();
     let currentTime = `${hours < 10 ? "0" + hours : hours} : ${minutes < 10 ? "0" + minutes : minutes} - `;
-    let time = document.getElementById("time");
-    time.innerText = currentTime;
+    let timeElement = document.getElementById("time");
+    timeElement.innerText = currentTime;
     setTimeout(displayTime, 1000);
-    console.log(currentTime, minutes);
 }
-
-
 
 const displayWelcomeMessage = () => {
     d = new Date();
@@ -30,5 +27,14 @@ const displayWelcomeMessage = () => {
     setTimeout(displayWelcomeMessage, (60 * 1000) * 60);
 }
 
-displayWelcomeMessage();
+const displayDate = () => {
+    const monthArray = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const day = d.getDate();
+    const dateElement = document.getElementById('date');
+    dateElement.innerText = `${day < 10 ? "0" + day : day} ${monthArray[d.getMonth()]} ${d.getFullYear()}`;
+    setTimeout(displayDate, (60 * 1000) * 60);
+}
+
 displayTime();
+displayWelcomeMessage();
+displayDate();
