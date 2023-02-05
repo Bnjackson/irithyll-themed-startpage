@@ -4,8 +4,9 @@ let hours = d.getHours();
 const displayTime = () => {
     d = new Date();
     hours = d.getHours();
+    seconds = d.getSeconds();
     let minutes = d.getMinutes();
-    let currentTime = `${hours < 10 ? "0" + hours : hours} : ${minutes < 10 ? "0" + minutes : minutes} - `;
+    let currentTime = `${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
     let timeElement = document.getElementById("time");
     timeElement.innerText = currentTime;
     setTimeout(displayTime, 1000);
