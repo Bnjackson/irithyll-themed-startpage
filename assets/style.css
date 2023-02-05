@@ -1,6 +1,3 @@
-/*
-FONTS
-*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /*
 CSS RESET
@@ -31,27 +28,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Quicksand', sans-serif;
-}
-
-h1, h2, a {
-    color: #eaf7fd;
-}
-
-
-h1, h2 {
-    font-size: 1.7rem;
-}
-
-h2 {
-    margin-top: 0.5%;
-    margin-bottom: 3%;
 }
 
 h3 {
     text-align: left;
     margin-bottom: 3%;
-    color: #a4cbda
 }
 
 ul {
@@ -73,18 +54,60 @@ a:visited {
     text-decoration: none;
 }
 
-#container {
-    margin: auto;
-    width: 80%;
-    display: flex;
+/*
+TYPOGRAPHY
+*/
+body {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.0rem;
 }
 
+h1, h2, a {
+    color: #eaf7fd;
+}
 
+h1 {
+    letter-spacing: 0.1rem;
+}
+
+h1, h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #a4cbda
+}
+
+#time {
+    letter-spacing: 0.15rem;
+}
+/*
+HEADINGS AND CONTAINER 
+*/
+#container {
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+#links-header-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+#header-container {
+    margin-bottom: 5%;
+}
+.header-wrapper {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
 /*
 IMAGE
 */
 #img-container {
+    margin: 0 auto;
     text-align: center;
+    flex: 1;
 }
 
 img {
@@ -94,11 +117,9 @@ img {
     border:1px solid #a8cfde;
 }
 
-#links-header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*
+LINKS SECTION
+*/
 
 #links-container {
     display: flex;
@@ -118,13 +139,5 @@ li {
 }
 
 /*
-WELCOME MESSAGE AND TIME
+MEDIA QUERIES 
 */
-#welcome-message-container {
-
-}
-
-date-container {
-    
-}
-
