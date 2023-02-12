@@ -121,7 +121,7 @@ LINKS SECTION
 
 #links-container {
     display: flex;
-    gap: 8%;
+    gap: 10%;
 }
 
 .header-container {
@@ -139,3 +139,16 @@ li {
 /*
 MEDIA QUERIES 
 */
+
+@media screen and (max-width: 1150px) {
+    img {
+        width: 400px;
+        height: 360px
+    }
+    #container {
+        flex-direction: column;
+    }
+    #links-container {
+        gap: 6%;
+    }
+}
